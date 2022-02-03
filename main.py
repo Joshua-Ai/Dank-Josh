@@ -3,7 +3,6 @@ from discord.ext import commands
 import colorama
 from colorama import Fore
 import asyncio
-from webserver import keep_alive
 import os
 
 prefix = "$$"
@@ -975,5 +974,5 @@ async def autodank(ctx):
             
 
             
-keep_alive()
+
 bot.run(os.getenv('token'), bot=False)
